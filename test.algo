@@ -1,0 +1,18 @@
+ALGORITHM checkpiont
+VAR
+   tab1 : ARRAY_OF integer[4];
+    tab2 : ARRAY_OF integer[4];
+   s, i,j:integer ;
+BEGIN
+s:=0;
+FOR i FROM 0 TO 4 STEP step  DO
+    FOR j FROM 0 TO 4 STEP step  DO
+        IF (t[i]=t[j]) THEN
+write (t[i]) ;
+j:=j+1;
+ IF (t[i]<>t[j]) THEN
+     s:=s+t[i];      
+    END_FOR
+END_FOR
+write (s);
+END
